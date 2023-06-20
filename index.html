@@ -4,240 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Pizza</title>
+    <title>Pizza Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    
-<header>
-    <h1 id="firstH1"><strong>Pizzas</strong></h1>
-</header>
 
-<div id="shopping">
+    <div class="models">
+        <div class="pizza-item">
+            <a href="">
+                <div class="pizza-item--img"><img src=""></div>
+                <div class="pizza-item--add">+</div>
+            </a>
+            <div class="pizza-item--price">R$</div>
+            <div class="pizza-item--name">---</div>
+            <div class="pizza-item--desc">--</div>
+        </div>
+        <div class="cart--item">
 
-    <div id="compras">
-        <div> <img src="images/pizza.png" class="img-1" alt=""></div>
-        <div id="compras-nome" style="margin-left:20px">
-            <div class="marg"  >
-                <h2 ><strong>Mussarela</strong></h2>
-                <p style="margin-top: 20px;">Descrição da pizza em mais de uma linha, muito legal e bem interessante!</p>
+            <img src="" alt="">
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtArea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item-qt">1</div>
+                <button class="cart--item-qtmais">+</button>
             </div>
-            <div class="marg">
-                <h4 style="color:#9999998e; ">TAMANHO</h4>
-            </div>
-            <div id="compras-nome-tamanho" class="marg">
-                
-                <div class="tamanho-1">
-                
-                    <button id="teste-3">
-                        
-                        <strong>PEQUENA</strong> <p>100g</p>
-
-                    </button>
-                 
-                
-                </div>
-                
-                <div class="tamanho-2">
-                
-                    <button id="teste-2"> 
-                    
-                        <strong>MÉDIO </strong><p>530g</p>
-                    
-                    </button>    
-                   
-                
-                </div>
-                
-                <div class="tamanho-3" >
-                   
-                    <button id="teste">
-                        <strong>GRANDE</strong>
-                        <p>860g</p>
-                    </button>
-                
-                </div>
-            </div>
-            <div id="preço"><p >Preço</p></div>
-            <div id="acrescimo">
-                <div id="resultado" style="font-weight: bold;">R$20.19</div>
-
-                <div  id="acrescimo-">
-                    <div id="decremento" >-</div>
-                    <span id="span" style="font-weight: bold;">0</span>
-                    <div id="incremento">+</div>
-                </div>
-
-
-            </div>
-
-            <div id="decisão">
-                <div id="add">
-                    <button id="add-1" onclick="Pizza()">Adicionar ao carrinho</button>
-                </div>
-                <div id="cancel">
-                    <button id="cancel-1">Cancelar</button>
-                </div>
-            </div>
-
 
 
         </div>
-
     </div>
+    <header>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <main>
+        <h1>Pizzas</h1>
+        <div class="pizza-area"></div>
+    </main>
 
-</div>
-
-
-<section>
-
-    <div id="container">
-        <div class="cont">
-            <div id="pizza" class="number-1">
-                <div>
-                    <img src="images/pizza.png" alt="" class="img">
-                </div>
-                <div>
-                    <button id="button" onclick="clicou()">+</button>
-                </div>
-                <div><p>R$20.19</p></div>
-                <div>
-                    <h2><strong>Mussarela</strong></h2>
-                    <p>Descrição da pizza em mais de uma linha, muito legal e bem interessante!</p>
-                </div>
-            </div>
-            <div id="pizza" class="number-2">
-                <div><img src="images/pizza2.png" alt="" class="img"></div>
-                <div>
-                    <button id="button" onclick="clicou()">+</button>
-                </div>
-                <div><p>R$18.00</p></div>
-                <div>
-                    <h2><strong>Calabresa</strong></h2>
-                    <p>Descrição da pizza em mais de uma linha, muito legal e bem interessante!</p>
-                </div>
-            </div>
-            <div id="pizza" class="number-3">
-                <div><img src="images/pizza3.png" alt="" class="img"></div>
-                <div>
-                    <button id="button" onclick="clicou()">+</button>
-                </div>
-                <div><p>R$17.45</p></div>
-                <div>
-                    <h2><strong>Quatro Queijos</strong></h2>
-                    <p>Descrição da pizza em mais de uma linha, muito legal e bem interessante!</p>
-                </div>
-            </div>
-            <div id="pizza" class="number-4">
-                <div><img src="images/pizza4.png" alt="" class="img"></div>
-                <div>
-                    <button id="button" onclick="clicou()">+</button>
-                </div>
-                <div><p>R$19.75</p></div>
-                <div>
-                    <h2><strong>Americana</strong></h2>
-                    <p>Descrição da pizza em mais de uma linha, muito legal e bem interessante!</p>
-                </div>
-            </div>
-            <div id="pizza" class="number-5">
-                <div><img src="images/pizza5.png" alt="" class="img"></div>
-                <div>
-                    <button id="button" onclick="clicou()">+</button>
-                </div>
-                <div><p>R$21.43</p></div>
-                <div>
-                    <h2><strong>Sorvete</strong></h2>
-                    <p>Descrição da pizza em mais de uma linha, muito legal e bem interessante!</p>
-                </div>
-            </div>
-            <div id="pizza" class="number-6">
-                <div><img src="images/pizza6.png" alt="" class="img"></div>
-                <div>
-                    <button id="button" onclick="clicou()">+</button>
-                </div>
-                <div><p>R$18.55</p></div>
-                <div>
-                    <h2><strong>Moda da Casa</strong></h2>
-                    <p>Descrição da pizza em mais de uma linha, muito legal e bem interessante!</p>
-                </div>
-            </div>
-            <div id="pizza" class="number-7">
-                <div><img src="images/pizza7.png" alt="" class="img"></div>
-                <div>
-                    <button id="button" onclick="clicou()">+</button>
-                </div>
-                <div><p>R$27.00</p></div>
-                <div>
-                    <h2><strong>Chocolate</strong></h2>
-                    <p>Descrição da pizza em mais de uma linha, muito legal e bem interessante!</p>
-                </div>
-            </div>
+    <aside>
+        <div class="cart--area">
+            <h1>Suas Pizzas</h1>
+            <div class="cart"></div>
+            <div class="cart--details"></div>
         </div>
-    
-    </div>
-    <div id="carrinho">
-    
-  
+    </aside>
 
-        <div id="container-carrinho">
-            <div id="menu-closer">❌</div>
-            <h2 id="suasPizzas">Suas Pizzas</h2>
-    
-            <div id="div-quantidade">
-    
-                <div id="car_1">
-                    <img src="images/pizza.png" alt="" id="pizzaCarrinho">
-                    <p style="font-size: 16px; align-self: center; font-weight: bold;" id="p-carrinho"><strong>Mussarela (G)</strong></p>
-                    <div  id="acrescimo-">
-                        <div id="decremento1" >-</div>
-                        <span id="span1" style="font-weight: bold;">0</span>
-                        <div id="incremento1">+</div>
+    <div class="pizzaWindowArea">
+        <div class="pizzaWindowBody">
+            <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+            <div class="pizzaBig">
+                <img src="" />
+            </div>
+            <div class="pizzaInfo">
+                <h1>--</h1>
+                <div class="pizzaInfo--desc">--</div>
+                <div class="pizzaInfo--sizearea">
+                    <div class="pizzaInfo--sector">Tamanho</div>
+                    <div class="pizzaInfo--sizes">
+                        <div data-key="0" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+                        <div data-key="1" class="pizzaInfo--size">MÉDIO <span>--</span></div>
+                        <div data-key="2" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
                     </div>
                 </div>
-
-                
-                <div id="car_2">
-                    <img src="images/pizza.png" alt="" id="pizzaCarrinho-2">
-                    <p style="font-size: 16px; align-self: center; font-weight: bold;" id="p-carrinho-2"><strong>Mussarela G</strong></p>
-                    <div  id="acrescimo-">
-                        <div id="decremento1" >-</div>
-                        <span id="span1" style="font-weight: bold;">0</span>
-                        <div id="incremento1">+</div>
+                <div class="pizzaInfo--pricearea">
+                    <div class="pizzaInfo--sector">Preço</div>
+                    <div class="pizzaInfo--price">
+                        <div class="pizzaInfo--actualPrice">R$ --</div>
+                        <div class="pizzaInfo--qtarea">
+                            <button class="pizzaInfo--qtmenos">-</button>
+                            <div class="pizzaInfo--qt">1</div>
+                            <button class="pizzaInfo--qtmais">+</button>
+                        </div>
                     </div>
                 </div>
-
-
-    
-    
-                
-    
-    
+                <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="pizzaInfo--cancelButton">Cancelar</div>
             </div>
-    
-            <div id="hr"></div>
-    
-    
-        </div>
-    
-    
-    
-    </div>
-    
-
-</section>
-
-<footer>
-    <div>
-        <div>
-            <p>Site feito por <a href="https://github.com/brunomorseg" target="_blank" rel="noopener noreferrer">B.M</a> para estudos</p>
-            
         </div>
     </div>
-</footer>
 
 
 
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </body>
 </html>
