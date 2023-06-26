@@ -45,12 +45,13 @@ let listaPadrao = document.querySelector('.pizza-item').cloneNode(true);
 //pizzaItem.querySelector('.pizza-item--img img').src = item.img
 //pizzaItem.querySelector('.pizza-item--add button').
 
-
-listaPadrao.querySelector('.item--paragrafo').innerHTML = `${item.p} adoraria que todos soubessem ${item.id}`
-
-
+    listaPadrao.querySelector('.item--paragrafo').innerHTML = `${item.p} adoraria que todos soubessem ${item.id}`
 
    document.querySelector('.pizza-area').append(listaPadrao)
+
+
+
+
 
 
 })

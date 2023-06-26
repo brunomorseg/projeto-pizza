@@ -37,3 +37,36 @@ main {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+.pizzaWindowArea{
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+.pizzaWindowBody {
+    width:900px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:20px 0px;
+    display: flex;
+
+}
+
+.pizzaBig {
+    flex: 1;
+}
+
+.pizzaInfo {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+}
